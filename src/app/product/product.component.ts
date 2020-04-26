@@ -6,6 +6,10 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./product.component.scss"],
 })
 export class ProductComponent implements OnInit {
+  goToLink(url: string) {
+    window.open(url, "_blank");
+  }
+
   constructor() {}
 
   ngOnInit() {}

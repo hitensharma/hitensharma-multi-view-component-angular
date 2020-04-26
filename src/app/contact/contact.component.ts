@@ -7,6 +7,10 @@ import { HeaderService } from "../services/header.service";
   styleUrls: ["./contact.component.scss"],
 })
 export class ContactComponent implements OnInit, OnDestroy {
+  goToLink(url: string) {
+    window.open(url, "_blank");
+  }
+
   constructor(private _header: HeaderService) {
     this._header.headerContactDetails.next(true);
     this._header.headerLoginBlock.next(false);

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # MultiViewComponent
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
@@ -25,10 +24,14 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-=======
+# To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
 # multi-view-component-angular
+
 Creating Multi View Header i.e. which have different views on going to different components.
->>>>>>> 9ce428f1d3b321b56021092ca6a3e7ec97feb6e3
+
+> > > > > > > 9ce428f1d3b321b56021092ca6a3e7ec97feb6e3
+
 # hitensharma-multi-view-component-angular
+
 # hitensharma-multi-view-component-angular

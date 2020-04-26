@@ -10,4 +10,11 @@ mat-card {
       color: white;
     }
   }
+  div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+  }
 }
