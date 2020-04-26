@@ -1,0 +1,21 @@
+mat-card {
+  background-color: papayawhip;
+  margin: 1rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+  text-align: center;
+  margin: 1rem;
+  form {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    width: 15rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 1rem;
+  }
+}

@@ -1,0 +1,54 @@
+<mat-toolbar color="primary">
+  <div class="box">
+    <div class="box__left">
+      <a href="#" class="logo">Logo</a>
+      <a routerLink="product" *ngIf="goBackLink" class="back">
+        <mat-icon aria-hidden="false" aria-label="Example home icon"
+          >chevron_left</mat-icon
+        >
+        {{ goBackLink }}
+      </a>
+    </div>
+    <div class="box__center">
+      <app-menu *ngIf="headerNav"></app-menu>
+    </div>
+    <div class="box__right">
+      <ng-container *ngIf="headerLoginBlock">
+        <button
+          routerLink="/"
+          *ngIf="!loggedInUser"
+          mat-raised-button
+          color="accent"
+        >
+          Sign In
+        </button>
+        <ul *ngIf="loggedInUser">
+          <li>
+            Welcome <strong>{{ loggedInUser }}</strong>
+          </li>
+          <li>
+            <a href="javascript:void(0)" (click)="onLogout()"
+              ><mat-icon aria-hidden="false" aria-label="Example home icon"
+                >lock_open</mat-icon
+              >Logout</a
+            >
+          </li>
+        </ul>
+      </ng-container>
+      <div class="contact__details" *ngIf="headerContactDetails">
+        <a href="#"
+          ><mat-icon aria-hidden="false" aria-label="Example home icon"
+            >phone</mat-icon
+          >+911234567890</a
+        >
+        <a href="#"
+          ><mat-icon aria-hidden="false" aria-label="Example home icon"
+            >mail</mat-icon
+          >hitensharma1515@gmail.com</a
+        >
+      </div>
+    </div>
+  </div>
+</mat-toolbar>
+
+<router-outlet></router-outlet>
