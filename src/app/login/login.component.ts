@@ -8,6 +8,10 @@ import { Router } from "@angular/router";
   styleUrls: ["./login.component.scss"],
 })
 export class LoginComponent implements OnInit {
+  goToLink(url: string) {
+    window.open(url, "_blank");
+  }
+
   constructor(private _header: HeaderService, private router: Router) {}
 
   ngOnInit() {}
